@@ -43,7 +43,7 @@ class YfbwapPayController extends Controller
         $params["subject"] = "易付宝PC在线支付";
         $params["body"] = "订单详细";
         $params["total_fee"] = "0.01";
-        $params["returnUrl"] = "http://www.***.com/yipcpayReturn";
+        $params["returnUrl"] = "http://www.***.com/yiwappayReturn";
         $data = $this->yfbwappay->pay($params);
         return $data;
     }
