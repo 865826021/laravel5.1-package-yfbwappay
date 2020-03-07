@@ -39,7 +39,7 @@ class YfbwapPayController extends Controller
         $this->yfbwappay = new yfbwappay();
     }
 
-    //易付宝PC支付
+    //易付宝WAP支付
     public function yfbwappay()
     {
         $params["out_trade_no"] = rand(1000000000,9999999999);
@@ -51,7 +51,7 @@ class YfbwapPayController extends Controller
         return $data;
     }
 
-    //易付宝PC支付回调验签
+    //易付宝WAP支付回调验签
     public function yfbwappayReturn(Request $request)
     {
         $params['responseCode'] = Input::get('responseCode');
